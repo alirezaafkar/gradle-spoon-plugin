@@ -76,6 +76,12 @@ open class SpoonExtension { // extensions cannot be final
   /** Run 'pm clear' before each test to clear app data before each test. */
   var clearAppDataBeforeEachTest: Boolean = false
 
+  /** Pulls test files from this directory. */
+  var fileDirectory: String = ""
+
+  /** Pulls test screenshots from this directory. */
+  var screenshotsDirectory: String = ""
+
   /* Passed in via -e, extra arguments */
 
   /** The number of separate shards to create. */

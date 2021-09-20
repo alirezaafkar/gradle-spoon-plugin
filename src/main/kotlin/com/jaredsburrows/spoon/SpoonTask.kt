@@ -117,6 +117,14 @@ open class SpoonTask : DefaultTask() { // tasks can't be final
       builder.addDevice(it)
     }
 
+    if (extension.fileDirectory.isNotEmpty()) {
+      builder.setPullFilesDir(extension.fileDirectory)
+    }
+
+    if (extension.screenshotsDirectory.isNotEmpty()) {
+      builder.setPullScreenshotsDir(extension.screenshotsDirectory)
+    }
+
     spoonRenderer = builder
 
     val success = if (testing) testValue else builder.build().run()
