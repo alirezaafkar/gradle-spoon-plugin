@@ -12,7 +12,7 @@ ext.versions = [
   'agp'     : '4.1.1',
   'java'    : '1.8',
   'kotlin'  : '1.4.10',
-  'spoon'   : '2.0.0-SNAPSHOT',
+  'spoon'   : 'ac01840e77',
   'jacoco'  : '0.7.9',
   'espresso': '3.3.0'
 ]
@@ -27,8 +27,8 @@ ext.deps = [
     ],
   ],
   'spoon'   : [
-    'runner': "com.squareup.spoon:spoon-runner:$versions.spoon",
-    'client': "com.squareup.spoon:spoon-client:$versions.spoon"
+    'runner': "com.github.alirezaafkar.spoon:spoon-runner:$versions.spoon",
+    'client': "com.github.alirezaafkar.spoon:spoon-client:$versions.spoon"
   ],
   'android' : [
     'tools': [
