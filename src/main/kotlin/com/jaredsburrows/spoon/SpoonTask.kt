@@ -117,11 +117,11 @@ open class SpoonTask : DefaultTask() { // tasks can't be final
       builder.addDevice(it)
     }
 
-    if (extension.fileDirectory.isNotEmpty()){
+    if (extension.fileDirectory.isNotEmpty()) {
       builder.setPullFilesDir(extension.fileDirectory)
     }
 
-    if (extension.screenshotsDirectory.isNotEmpty()){
+    if (extension.screenshotsDirectory.isNotEmpty()) {
       builder.setPullScreenshotsDir(extension.screenshotsDirectory)
     }
 
